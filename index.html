@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shree Chehar Maa Trust | Jaga Bhagat Ni Chehar</title>
+    <meta
+      name="description"
+      content="Shree Chehar Maa Trust — official website for darshan timings, seva &amp; donations, events and the divine story of Jaga Bhagat Ni Chehar."
+    />
+
+    <!-- Fonts: Cormorant Garamond (EN display) + Noto Serif Gujarati (GU display) + Mukta Vaani (body, EN+GU) + Poppins (utility) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Noto+Serif+Gujarati:wght@500;600;700&family=Mukta+Vaani:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <!-- ============ NAVBAR ============ -->
+    <nav id="navbar">
+      <div class="container">
+        <a href="#hero" class="brand">
+          <div class="logo"><img src="img/logo-chehar.png" /></div>
+          <div class="brand-text">
+            <span class="name-en">Shree Chehar Maa Trust</span>
+            <span class="name-gu">શ્રી જગા ભગત ની ચેહર</span>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#darshan">Darshan</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#seva">Seva</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <a href="#" class="btn btn-primary" id="navDonateBtn"
+            ><i class="fa-solid fa-hand-holding-heart"></i> Donate Now</a
+          >
+        </div>
+
+        <div class="nav-toggle" id="navToggle" aria-label="menu"><span></span><span></span><span></span></div>
+      </div>
+    </nav>
+
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#darshan">Darshan</a>
+      <a href="#about">About</a>
+      <a href="#seva">Seva</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#events">Events</a>
+      <a href="#faq">FAQs</a>
+      <a href="#contact">Contact</a>
+      <a href="#" class="btn btn-primary" id="mobileDonateBtn">Donate Now</a>
+    </div>
+
+    <!-- ============ HERO ============ -->
+    <section id="hero">
+  		<div class="hero-overlay"></div>
+      	<div class="container hero-content">
+	        <div class="hero-kicker"><i class="fa-solid fa-om"></i> Shree Chehar Maa Trust</div>
+	        <h1 class="hero-title">Blessings of <em>Chehar Maa</em>,<br />Faith of Jaga Bhagat</h1>
+	        <div class="hero-title-gu">જગા ભગત ની ચેહર — જ્યાં શ્રદ્ધા શ્વાસ લે છે.</div>
+	        <p class="hero-desc">ચેહર કરે મહેર તો થાય લીલા લહેર.</p>
+	        <div class="hero-actions">
+	          <a href="#" class="btn btn-primary" id="heroDonateBtn"
+	            ><i class="fa-solid fa-hand-holding-heart"></i> Donate Now</a
+	          >
+	          <a href="#darshan" class="btn btn-outline"><i class="fa-solid fa-clock"></i> Darshan Timing</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ANNOUNCEMENT TICKER ============ -->
+    <div class="ticker-bar">
+	  <span class="tag">Announcement</span>
+	  <div class="ticker-track">
+	    <span>
+	    	<b>ૐ</b> &nbsp; દરેક વ્યક્તિ એ મંદિર માં શ્રદ્ધા થી જ આવવું , માતાજી ના ધામ માં આપ ના સ્વૈચ્છીક દાન સિવાય કોઈ પણ કાર્ય માટે અલગ થી રૂપિયા લેવા માં આવતા નથી &nbsp; 
+	      	<b>ૐ</b> &nbsp; ભક્તો એ મંદિર મા ટુંકા વસ્ત્રો પહેરી પ્રવેશ કરાવો નહિ * કેપ્રી, હાફ-પેન્ટ, ગાઉન મંદિર પરિસરમાં પ્રતિબંધિત છે &nbsp;
+	    </span>
+	    <span>
+	    	<b>ૐ</b> &nbsp; દરેક વ્યક્તિ એ મંદિર માં શ્રદ્ધા થી જ આવવું , માતાજી ના ધામ માં આપ ના સ્વૈચ્છીક દાન સિવાય કોઈ પણ કાર્ય માટે અલગ થી રૂપિયા લેવા માં આવતા નથી &nbsp;
+	      	<b>ૐ</b> &nbsp; ભક્તો એ મંદિર મા ટુંકા વસ્ત્રો પહેરી પ્રવેશ કરાવો નહિ * કેપ્રી, હાફ-પેન્ટ, ગાઉન મંદિર પરિસરમાં પ્રતિબંધિત છે &nbsp;
+	    </span>
+	  </div>
+	</div>
+
+    <!-- ============ DARSHAN TIMING ============ -->
+    <section id="darshan">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Chehar Dham Hours</div>
+          <h2 class="section-title">Darshan &amp; Aarti Timing<span class="gu">દર્શન અને આરતી નો સમય</span></h2>
+          <p class="section-sub">
+            Plan your visit to Shree Chehar Maa Temple. Timings may extend during festivals and special occasions.
+          </p>
+        </div>
+
+        <div class="darshan-grid">
+          <div class="darshan-card reveal">
+            <div class="timing-rows">
+              <div class="timing-row">
+                <span class="label"><i class="fa-solid fa-sun"></i> Mangala Aarti</span
+                ><span class="label">07:00 – 07:30</span>
+              </div>
+              <div class="timing-row">
+                <span class="label"><i class="fa-solid fa-door-open"></i> Morning Darshan</span
+                ><span class="label">07:00 – 02:00</span>
+              </div>
+              <div class="timing-row">
+                <span class="label"><i class="fa-solid fa-bowl-rice"></i> Break</span
+                ><span class="label">2:00 – 04:00</span>
+              </div>
+              <div class="timing-row">
+                <span class="label"><i class="fa-solid fa-door-open"></i> Evening Darshan</span
+                ><span class="label">04:00 – 08:30</span>
+              </div>
+              <div class="timing-row">
+                <span class="label"><i class="fa-solid fa-fire-flame-curved"></i> Sandhya Aarti</span
+                ><span class="label">07:00 – 07:30</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="darshan-info">
+            <div class="eyebrow" style="margin-bottom: 6px">Good To Know</div>
+            <h3 class="section-title" style="font-size: 28px">Visiting the Chehar Dham</h3>
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <h4>How to Reach</h4>
+                  <p>Well connected by road from Ahmedabad and nearby towns of Gujarat.</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-utensils"></i></div>
+                <div>
+                  <h4>Annakshetra (Bhojan Seva)</h4>
+                  <p>Free prasad(whole day) & Alpahar is served daily to devotees after Sandhya Aarti.</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-bed"></i></div>
+                <div>
+                  <h4>Rest Area</h4>
+                  <p>
+                    Simple and clean space facilities are available for devotees travelling from afar.
+                  </p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-droplet"></i></div>
+                <div>
+                  <h4>Drinking Water</h4>
+                  <p>Clean and purified drinking water cooler installed in the temple premises.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <div class="frame">
+            <img src="img/chehar.jpg" alt="Chehar Maa temple sanctum with diya lamps and devotees" />
+          </div>
+          <div class="about-badge">
+            <span class="num">20+</span>
+            <span class="txt">Years of Seva &amp; Devotion</span>
+          </div>
+        </div>
+
+        <div class="about-copy reveal">
+          <div class="eyebrow">Our Story</div>
+          <h2 class="section-title">Jaga Bhagat Ni Chehar<span class="gu">જગા ભગત ની ચેહર ની કથા</span></h2>
+          <p>
+            Shree Chehar Maa Trust carries forward the living tradition of devotion built by Jaga Bhagat — a legacy of
+            faith, humility and selfless service to the community. The temple stands today as a spiritual home where
+            devotees gather to seek Maa's blessings and continue the work Jaga Bhagat began.
+          </p>
+          <p>
+            The trust is dedicated to preserving this heritage while serving devotees through daily seva, community
+            meals, festival celebrations, and the upkeep of the temple premises for generations to come.
+          </p>
+          <div class="about-points">
+            <div class="about-point"><i class="fa-solid fa-circle-check"></i> Daily Aarti &amp; Darshan Seva</div>
+            <div class="about-point"><i class="fa-solid fa-circle-check"></i> Free Annakshetra Bhojan</div>
+            <div class="about-point"><i class="fa-solid fa-circle-check"></i> Chehar Dham Maintenance &amp; Renovation</div>
+            <div class="about-point"><i class="fa-solid fa-circle-check"></i> Community &amp; Festival Programs</div>
+          </div>
+          <a href="#seva" class="btn btn-maroon" style="margin-top: 32px"
+            ><i class="fa-solid fa-hands-praying"></i> Explore Our Seva</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SEVA / DONATION CAUSES ============ -->
+    <section id="seva">
+      <div class="container">
+        <div class="section-head center reveal">
+          <div class="eyebrow">Contribute</div>
+          <h2 class="section-title">Seva &amp; Donation<span class="gu">સેવા અને દાન</span></h2>
+          <p class="section-sub">
+            Every contribution helps sustain the temple's daily rituals, community meals and the sacred premises for
+            future generations.
+          </p>
+        </div>
+
+        <div class="seva-grid reveal-stagger">
+          <div class="seva-card reveal">
+            <div class="icon"><i class="fa-solid fa-fire"></i></div>
+            <h3>Daily Aarti Seva</h3>
+            <p>Sponsor the morning or evening aarti and have your family's name included in the day's sankalp.</p>
+            <button class="btn btn-maroon donate-open" data-cause="Daily Aarti Seva">Contribute</button>
+          </div>
+
+          <div class="seva-card reveal">
+            <div class="icon"><i class="fa-solid fa-bowl-food"></i></div>
+            <h3>Annakshetra Bhojan</h3>
+            <p>Support free meals served daily to devotees and pilgrims visiting the Chehar Maa temple.</p>
+            <button class="btn btn-maroon donate-open" data-cause="Annakshetra Bhojan Seva">Contribute</button>
+          </div>
+
+          <div class="seva-card reveal">
+            <div class="icon"><i class="fa-solid fa-place-of-worship"></i></div>
+            <h3>Chehar Dham Renovation</h3>
+            <p>Help preserve and restore the temple structure, shikhar and premises for coming generations.</p>
+            <button class="btn btn-maroon donate-open" data-cause="Temple Renovation Fund">Contribute</button>
+          </div>
+        </div>
+
+        <div class="donate-panel reveal">
+          <div class="donate-copy">
+            <h3>Your Contribution Carries Maa's Blessings</h3>
+            <p>
+              Donations to Shree Chehar Maa Trust directly support temple rituals, Annakshetra meals, upkeep of the
+              premises and community welfare initiatives inspired by Jaga Bhagat's legacy of service.
+            </p>
+            <div class="donate-stats">
+              <div>
+                <div class="n" data-count="1200">10</div>
+                <div class="l">Devotee Families Served / Month</div>
+              </div>
+              <div>
+                <div class="n" data-count="50">20</div>
+                <div class="l">Years of Trust Legacy</div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary" id="panelDonateBtn"
+              ><i class="fa-solid fa-hand-holding-heart"></i> Donate Now</a
+            >
+          </div>
+
+          <div class="donate-form">
+            <h4>Quick Donation</h4>
+            <div class="amount-grid">
+              <button class="amount-btn" data-amt="101">₹101</button>
+              <button class="amount-btn active" data-amt="501">₹501</button>
+              <button class="amount-btn" data-amt="1100">₹1,100</button>
+              <button class="amount-btn" data-amt="2100">₹2,100</button>
+              <button class="amount-btn" data-amt="5100">₹5,100</button>
+              <button class="amount-btn" data-amt="0">Other</button>
+            </div>
+            <div class="custom-amount"><span>₹</span><input type="number" id="quickAmount" value="501" min="1" /></div>
+            <select id="quickCause">
+              <option>General Donation</option>
+              <option>Daily Aarti Seva</option>
+              <option>Annakshetra Bhojan Seva</option>
+              <option>Temple Renovation Fund</option>
+            </select>
+            <button class="btn btn-primary" id="quickDonateSubmit">
+              <i class="fa-solid fa-lock"></i> Proceed to Donate
+            </button>
+            <div class="form-note"><i class="fa-solid fa-shield-heart"></i> 80G Tax Exemption Available</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LEGACY STATS ============ -->
+    <section id="legacy">
+      <div class="container legacy-grid">
+        <div class="legacy-item reveal">
+          <div class="icon"><i class="fa-solid fa-place-of-worship"></i></div>
+          <div class="count"><span data-count="20">0</span>+</div>
+          <div class="lbl">Years of Legacy</div>
+        </div>
+        <div class="legacy-item reveal">
+          <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+          <div class="count"><span data-count="50000">0</span>+</div>
+          <div class="lbl">Annual Devotees</div>
+        </div>
+        <div class="legacy-item reveal">
+          <div class="icon"><i class="fa-solid fa-bowl-rice"></i></div>
+          <div class="count"><span data-count="1000">0</span>+</div>
+          <div class="lbl">Meals Served Yearly</div>
+        </div>
+        <div class="legacy-item reveal">
+          <div class="icon"><i class="fa-solid fa-hands-praying"></i></div>
+          <div class="count"><span data-count="365">0</span></div>
+          <div class="lbl">Days of Uninterrupted Seva</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section id="gallery">
+      <div class="container">
+        <div class="section-head center reveal">
+          <div class="eyebrow">Glimpses</div>
+          <h2 class="section-title">Chehar Dham Gallery<span class="gu">મંદિર ની ઝલક</span></h2>
+          <p class="section-sub">Moments of devotion, festivals and seva from the Shree Chehar Maa Temple premises.</p>
+        </div>
+        <div class="gallery-grid reveal-stagger">
+          <div class="g-item reveal">
+            <img src="img/chehar.jpg" alt="Temple sanctum decorated with lights" /><span class="g-label"
+              >Main Sanctum</span
+            >
+          </div>
+          <div class="g-item reveal">
+            <img src="img/cheharmaa.png" alt="Diya lamps lit during evening aarti" /><span class="g-label"
+              >Sandhya Aarti</span
+            >
+          </div>
+          <div class="g-item reveal">
+            <img src="img/Raja Chehar.jpeg" alt="Marigold flower garlands" /><span class="g-label">Flower Seva</span>
+          </div>
+          <div class="g-item reveal">
+            <img src="img/logo.jpg" alt="Devotees gathered for festival celebration" /><span class="g-label"
+              >Festival Utsav</span
+            >
+          </div>
+          <div class="g-item reveal">
+            <img src="img/vid.jpg" alt="Temple sanctum decorated with lights" /><span class="g-label"
+              >Annakshetra</span
+            >
+          </div>
+          <div class="g-item reveal">
+            <img src="img/group1.jpeg" alt="Temple sanctum decorated with lights" /><span class="g-label"
+              >Yuva Parivar</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="lightbox">
+      <span class="lb-close"><i class="fa-solid fa-xmark"></i></span
+      ><img id="lightboxImg" src="" alt="Enlarged gallery photo" />
+    </div>
+
+    <!-- ============ EVENTS ============ -->
+    <section id="events">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Sacred Calendar</div>
+          <h2 class="section-title">Upcoming Events<span class="gu">આગામી કાર્યક્રમો</span></h2>
+        </div>
+        <div class="events-list">
+          <div class="event-row reveal">
+            <div class="event-date"><span class="d">03</span><span class="m">Aug</span></div>
+            <div class="event-info">
+              <h4>Shravan Somvar Special Aarti</h4>
+              <p>Special abhishek and aarti held every Monday through the holy month of Shravan.</p>
+            </div>
+            <span class="event-tag">Weekly</span>
+          </div>
+          <div class="event-row reveal">
+            <div class="event-date"><span class="d">15</span><span class="m">Aug</span></div>
+            <div class="event-info">
+              <h4>Community Bhandara</h4>
+              <p>Large-scale community meal seva open to all devotees and visitors, no registration required.</p>
+            </div>
+            <span class="event-tag">Community</span>
+          </div>
+          <div class="event-row reveal">
+            <div class="event-date"><span class="d">21</span><span class="m">Sep</span></div>
+            <div class="event-info">
+              <h4>Navratri Sthapana</h4>
+              <p>Nine nights of garba, aarti and celebration begin with the sacred ghat sthapana ceremony.</p>
+            </div>
+            <span class="event-tag">Festival</span>
+          </div>
+          <div class="event-row reveal">
+            <div class="event-date"><span class="d">12</span><span class="m">Oct</span></div>
+            <div class="event-info">
+              <h4>Trust Foundation Day</h4>
+              <p>Annual celebration marking the founding of Shree Chehar Maa Trust, with special satsang and prasad.</p>
+            </div>
+            <span class="event-tag">Annual</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GUIDELINES ============ -->
+    <section id="guidelines">
+      <div class="container">
+        <div class="section-head center reveal">
+          <div class="eyebrow">Devotee Guidelines</div>
+          <h2 class="section-title">Do's &amp; Don'ts<span class="gu">શું કરવું અને શું ન કરવું</span></h2>
+        </div>
+        <div class="guide-grid">
+		  <div class="guide-col dos reveal">
+		    <h3><i class="fa-solid fa-circle-check"></i> Do's</h3>
+		    <ul>
+		      <li>
+		        <i class="fa-solid fa-check"></i> Maintain cleanliness and discipline inside the temple premises. —
+		        મંદિર પરિસરમાં સ્વચ્છતા અને શિસ્ત જાળવો.
+		      </li>
+		      <li>
+		        <i class="fa-solid fa-check"></i> Stand peacefully in the queue and cooperate with volunteers. —
+		        શાંતિપૂર્વક કતારમાં ઊભા રહો અને સ્વયંસેવકોને સહકાર આપો.
+		      </li>
+		      <li>
+		        <i class="fa-solid fa-check"></i> Take special care of children, elders and differently-abled devotees. —
+		        બાળકો, વૃદ્ધો અને દિવ્યાંગ ભક્તોની ખાસ કાળજી રાખો.
+		      </li>
+		      <li>
+		        <i class="fa-solid fa-check"></i> Collect a receipt after making any donation or offering. —
+		        કોઈપણ દાન અથવા ભેટ આપ્યા પછી પહોંચ અવશ્ય લો.
+		      </li>
+		      <li>
+		        <i class="fa-solid fa-check"></i> Keep your personal belongings safe at all times. —
+		        તમારી અંગત ચીજવસ્તુઓ હંમેશા સુરક્ષિત રાખો.
+		      </li>
+		    </ul>
+		  </div>
+		  <div class="guide-col donts reveal">
+		    <h3><i class="fa-solid fa-circle-xmark"></i> Don'ts</h3>
+		    <ul>
+		      <li>
+		        <i class="fa-solid fa-xmark"></i> Avoid using mobile phones or cameras inside the main sanctum. —
+		        મુખ્ય ગર્ભગૃહમાં મોબાઇલ ફોન અથવા કેમેરાનો ઉપયોગ ટાળો.
+		      </li>
+		      <li>
+		        <i class="fa-solid fa-xmark"></i> Do not park vehicles in a way that obstructs others. —
+		        વાહનો એવી રીતે પાર્ક ન કરો કે જેનાથી અન્યને અડચણ થાય.
+		      </li>
+		      <li>
+		        <i class="fa-solid fa-xmark"></i> Please do not waste prasad offered at the temple. —
+		        મંદિરમાં અપાયેલ પ્રસાદનો બગાડ ન કરો.
+		      </li>
+		      <li>
+		        <i class="fa-solid fa-xmark"></i> Do not respond to unofficial links or messages claiming to be the trust. —
+		        ટ્રસ્ટ હોવાનો દાવો કરતી બિનસત્તાવાર લિંક અથવા સંદેશાઓનો જવાબ ન આપો.
+		      </li>
+		      <li>
+		        <i class="fa-solid fa-xmark"></i> Avoid bringing plastic items onto the temple premises. —
+		        મંદિર પરિસરમાં પ્લાસ્ટિકની વસ્તુઓ લાવવાનું ટાળો.
+		      </li>
+		    </ul>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section id="faq">
+      <div class="container">
+        <div class="section-head center reveal">
+          <div class="eyebrow">Have Questions?</div>
+          <h2 class="section-title">Frequently Asked<span class="gu">વારંવાર પુછાતા પ્રશ્નો</span></h2>
+        </div>
+        <div class="faq-wrap reveal">
+		  <div class="faq-item active">
+		    <div class="faq-q">
+		      How can I reach the Chehar Maa Temple? — ચેહર માતાના મંદિર સુધી હું કેવી રીતે પહોંચી શકું?
+		      <i class="fa-solid fa-plus"></i>
+		    </div>
+		    <div class="faq-a">
+		      <p>
+		        The temple is well connected by road from Ahmedabad and surrounding towns of Gujarat. Regular buses and
+		        private taxis are available, with dedicated parking near the premises. — મંદિર અમદાવાદ અને ગુજરાતના આસપાસના
+		        શહેરોથી રોડ માર્ગે સારી રીતે જોડાયેલું છે. નિયમિત બસો અને ખાનગી ટેક્સી ઉપલબ્ધ છે, અને પરિસર નજીક પાર્કિંગની
+		        સુવિધા છે.
+		      </p>
+		    </div>
+		  </div>
+		  <div class="faq-item">
+		    <div class="faq-q">
+		      Is online donation to the trust secure? — ટ્રસ્ટને ઓનલાઇન દાન આપવું સુરક્ષિત છે?
+		      <i class="fa-solid fa-plus"></i>
+		    </div>
+		    <div class="faq-a">
+		      <p>
+		        Yes. All donations are processed through secure, trust-verified payment channels, and an official receipt
+		        with 80G exemption details is issued for every contribution. — હા. તમામ દાન સુરક્ષિત, ટ્રસ્ટ-માન્ય પેમેન્ટ
+		        માધ્યમો દ્વારા સ્વીકારવામાં આવે છે, અને દરેક દાન માટે 80G મુક્તિની વિગતો સાથે અધિકૃત પહોંચ આપવામાં આવે છે.
+		      </p>
+		    </div>
+		  </div>
+		  <div class="faq-item">
+		    <div class="faq-q">
+		      Can I sponsor a specific seva or aarti? — શું હું કોઈ ચોક્કસ સેવા અથવા આરતી પ્રાયોજિત કરી શકું?
+		      <i class="fa-solid fa-plus"></i>
+		    </div>
+		    <div class="faq-a">
+		      <p>
+		        Absolutely. You may sponsor the daily Mangala or Sandhya Aarti, Annakshetra bhojan, or temple renovation
+		        seva — simply select the cause while donating. — ચોક્કસ. તમે રોજિંદી મંગળા અથવા સંધ્યા આરતી, અન્નક્ષેત્ર
+		        ભોજન, અથવા મંદિર જીર્ણોદ્ધાર સેવા પ્રાયોજિત કરી શકો છો — દાન આપતી વખતે ફક્ત કારણ પસંદ કરો.
+		      </p>
+		    </div>
+		  </div>
+		  <div class="faq-item">
+			  <div class="faq-q">
+			    Are accommodation facilities available for devotees? — શું ભક્તો માટે રહેવાની સુવિધા ઉપલબ્ધ છે?
+			    <i class="fa-solid fa-plus"></i>
+			  </div>
+			  <div class="faq-a">
+			    <p>
+			      Not at present, Dedicated accommodation facilities are not yet available near the temple; devotees are advised
+			      to arrange their stay in advance at their own. — હાલમાં નહીં, મંદિર નજીક રહેવાની અલગ સુવિધા હજુ ઉપલબ્ધ નથી;
+			      ભક્તોને વિનંતી છે કે તેઓ અગાઉથી રહેવાની વ્યવસ્થા સ્વયં કરે.
+			    </p>
+			  </div>
+			</div>
+		  <div class="faq-item">
+		    <div class="faq-q">
+		      Will I receive a donation receipt for tax purposes? — શું મને કરવેરા હેતુ માટે દાનની પહોંચ મળશે?
+		      <i class="fa-solid fa-plus"></i>
+		    </div>
+		    <div class="faq-a">
+		      <p>
+		        Every donor receives an official receipt immediately after contributing, which can be used for 80G tax
+		        exemption purposes. — દરેક દાતાને દાન આપ્યા બાદ તરત જ અધિકૃત પહોંચ મળે છે, જેનો ઉપયોગ 80G કરવેરા મુક્તિ
+		        માટે કરી શકાય છે.
+		      </p>
+		    </div>
+		  </div>
+		</div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Get In Touch</div>
+          <h2 class="section-title">Contact Shree Chehar Maa Trust<span class="gu">અમારો સંપર્ક કરો</span></h2>
+        </div>
+        <div class="contact-grid">
+          <form class="contact-form reveal" id="contactForm">
+            <div class="form-row">
+              <input type="text" placeholder="Your Name" required />
+              <input type="tel" placeholder="Phone Number" required />
+            </div>
+            <input type="email" placeholder="Email Address" />
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn-maroon" style="width: 100%">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+
+          <div class="contact-info reveal">
+            <div class="c-item">
+              <div class="ic"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h4>Chehar Dham Address</h4>
+                <p>2,'Shree Chehar Nivas',Umiyanagar Society,B/H Raghunath High school,Bapunagar,Ahmedabad</p>
+              </div>
+            </div>
+            <div class="c-item">
+              <div class="ic"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h4>Phone</h4>
+                <p>+91 12345 43210</p>
+              </div>
+            </div>
+            <div class="c-item">
+              <div class="ic"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <p>info@cheharmaatrust.org</p>
+              </div>
+            </div>
+            <div class="c-item">
+              <div class="ic"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <h4>Trust Office Hours</h4>
+                <p>Everyday, 9:00 AM – 8:00 PM</p>
+              </div>
+            </div>
+            <div class="social-row">
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="brand">
+              <div class="footer-logo"><img src="img/logo-chehar.png" /></div>
+            </div>
+            <p>
+              Carrying forward Jaga Bhagat's legacy of faith and selfless seva, for every devotee who seeks Chehar Maa's
+              blessings.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h5>Explore</h5>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#darshan">Darshan Timing</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#events">Events</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Support</h5>
+            <ul>
+              <li><a href="#seva">Donate Now</a></li>
+              <li><a href="#faq">FAQs</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#guidelines">Guidelines</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Newsletter</h5>
+            <p style="font-size: 13.5px; margin-bottom: 14px; color: rgba(255, 255, 255, 0.6)">
+              Get updates on festivals, events &amp; seva opportunities.
+            </p>
+            <div style="display: flex; gap: 8px">
+              <input
+                type="email"
+                id="newsletterInput"
+                placeholder="Your email"
+                style="
+                  flex: 1;
+                  padding: 10px 12px;
+                  border-radius: 8px;
+                  border: none;
+                  font-size: 13px;
+                  font-family: inherit;
+                "
+              />
+              <button class="btn btn-primary" id="newsletterBtn" style="padding: 10px 16px">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span id="year"></span> Shree Chehar Maa Trust. All Rights Reserved.</span>
+          <span>Jaga Bhagat Ni Chehar — Faith · Seva · Devotion</span>
+        </div>
+      </div>
+    </footer>
+
+    <button id="backTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- ============ DONATION MODAL ============ -->
+    <div id="donateModal">
+      <div class="modal-box">
+        <span class="modal-close"><i class="fa-solid fa-xmark"></i></span>
+        <h3>Make a Donation</h3>
+        <div class="sub">Your contribution supports the daily seva of Shree Chehar Maa Trust.</div>
+        <form id="donationForm">
+          <div class="amount-grid">
+            <button type="button" class="amount-btn" data-amt="101">₹101</button>
+            <button type="button" class="amount-btn active" data-amt="501">₹501</button>
+            <button type="button" class="amount-btn" data-amt="1100">₹1,100</button>
+            <button type="button" class="amount-btn" data-amt="2100">₹2,100</button>
+            <button type="button" class="amount-btn" data-amt="5100">₹5,100</button>
+            <button type="button" class="amount-btn" data-amt="0">Other</button>
+          </div>
+          <div class="custom-amount"><span>₹</span><input type="number" id="modalAmount" value="501" min="1" /></div>
+          <select id="modalCause">
+            <option>General Donation</option>
+            <option>Daily Aarti Seva</option>
+            <option>Annakshetra Bhojan Seva</option>
+            <option>Temple Renovation Fund</option>
+          </select>
+          <input type="text" placeholder="Full Name" required />
+          <input type="tel" placeholder="Phone Number" required />
+          <input type="email" placeholder="Email Address" />
+          <button type="submit" class="btn btn-primary"><i class="fa-solid fa-lock"></i> Proceed to Donate</button>
+          <div class="form-note">
+            <i class="fa-solid fa-shield-heart"></i> Secure payment · 80G Tax Exemption Available
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="toast" id="toast"><i class="fa-solid fa-circle-check"></i> <span id="toastMsg">Thank you!</span></div>
+  </body>
+</html>
