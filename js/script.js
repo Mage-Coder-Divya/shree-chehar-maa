@@ -18,14 +18,16 @@ $(function () {
     $("#mobileMenu").toggleClass("open");
     $("#menuOverlay").toggleClass("show");
   });
-  $("#menuOverlay, .mobile-menu a").on("click", closeMenu);
+  $("#menuOverlay, .mobile-menu a, #mobileMenuClose").on("click", closeMenu);
 
   /* ---------- Smooth close menu + scroll on anchor click ---------- */
   $('a[href^="#"]').on("click", function (e) {
     var target = $(this).attr("href");
     if (target.length > 1 && $(target).length) {
       e.preventDefault();
-      $("html, body").animate({ scrollTop: $(target).offset().top - 70 }, 700);
+      $("html, body").animate({
+        scrollTop: $(target).offset().top - 70
+      }, 700);
     }
   });
 
@@ -41,8 +43,79 @@ $(function () {
   revealOnScroll();
   $(window).on("scroll resize", revealOnScroll);
 
+  /* ---------- Initialize Gallery Swiper ---------- */
+  const gallerySwiper = new Swiper('.gallery-slider', {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 0,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: true,
+      pauseOnMouseEnter: true,
+    },
+
+    // Responsive Breakpoints:
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+        spaceBetween: 12,
+      },
+      641: {
+        slidesPerView: 3,
+        spaceBetween: 16,
+      },
+      1025: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // Pagination dots
+    pagination: {
+      type: 'progressbar',
+      el: '.swiper-pagination',
+    },
+  });
+  /* ---------- Gallery Image Full Screen Lightbox Handler ---------- */
+  // Use delegated click event on '.gallery-slider' so cloned loop slides work too
+  $('.gallery-slider').on('click', '.g-item', function () {
+    const imgSrc = $(this).find('img').attr('src');
+    const imgAlt = $(this).find('img').attr('alt') || 'Gallery Image';
+
+    // Set the lightbox image source & alt text
+    $('#lightboxImg').attr('src', imgSrc).attr('alt', imgAlt);
+
+    // Fade in the lightbox modal
+    $('#lightbox').css('display', 'flex').hide().fadeIn(250);
+    $('body').css('overflow', 'hidden'); // Lock background scrolling
+  });
+
+  /* Close Lightbox when clicking backdrop or Close (X) icon */
+  $('.lb-close, #lightbox').on('click', function (e) {
+    if (e.target.id === 'lightbox' || $(e.target).closest('.lb-close').length) {
+      $('#lightbox').fadeOut(200, function () {
+        $('body').css('overflow', ''); // Restore scrolling
+      });
+    }
+  });
+
+  /* Close Lightbox on 'Escape' Key */
+  $(document).on('keyup', function (e) {
+    if (e.key === 'Escape') {
+      $('#lightbox').fadeOut(200, function () {
+        $('body').css('overflow', '');
+      });
+    }
+  });
   /* ---------- Animated counters ---------- */
   var countersDone = false;
+
   function animateCounters() {
     if (countersDone) return;
     var legacyTop = $("#legacy").offset().top;
@@ -51,19 +124,20 @@ $(function () {
       $("[data-count]").each(function () {
         var $this = $(this),
           target = parseInt($this.attr("data-count"), 10);
-        $({ num: 0 }).animate(
-          { num: target },
-          {
-            duration: 1800,
-            easing: "swing",
-            step: function () {
-              $this.text(Math.floor(this.num).toLocaleString("en-IN"));
-            },
-            complete: function () {
-              $this.text(target.toLocaleString("en-IN"));
-            },
-          }
-        );
+        $({
+          num: 0
+        }).animate({
+          num: target
+        }, {
+          duration: 1800,
+          easing: "swing",
+          step: function () {
+            $this.text(Math.floor(this.num).toLocaleString("en-IN"));
+          },
+          complete: function () {
+            $this.text(target.toLocaleString("en-IN"));
+          },
+        });
       });
     }
   }
@@ -72,6 +146,7 @@ $(function () {
 
   /* ---------- Progress bar fill on view ---------- */
   var progressDone = false;
+
   function fillProgress() {
     if (progressDone) return;
     var sevaTop = $("#seva").offset().top;
@@ -144,6 +219,7 @@ $(function () {
     $("#donateModal").css("display", "flex");
     $("body").css("overflow", "hidden");
   }
+
   function closeDonateModal() {
     $("#donateModal").css("display", "none");
     $("body").css("overflow", "");
@@ -200,18 +276,10 @@ $(function () {
     }
   });
 
-  /* ---------- Language toggle (demo: swaps a couple of labels) ---------- */
-  var isGujarati = false;
-  $("#langToggle").on("click", function () {
-    isGujarati = !isGujarati;
-    $(this).html(
-      isGujarati ? '<i class="fa-solid fa-language"></i> English' : '<i class="fa-solid fa-language"></i> ગુજરાતી'
-    );
-    showToast(isGujarati ? "ભાષા ગુજરાતી માં બદલાઈ" : "Language switched to English");
-  });
-
   /* ---------- Back to top ---------- */
   $("#backTop").on("click", function () {
-    $("html, body").animate({ scrollTop: 0 }, 600);
+    $("html, body").animate({
+      scrollTop: 0
+    }, 600);
   });
 });
